@@ -64,7 +64,7 @@ history.replaceState('title', '', location.pathname);
       ctx.textAlign = 'center';
       ctx.textBaseline = 'top';
       ctx.globalAlpha = 0.5;
-      ctx.fillText('加载中...', 0, 40);
+      ctx.fillText('Đang tải...', 0, 40);
 
       var t = Math.PI * 2 * 0.9;
       var step = t / 20;
@@ -130,7 +130,7 @@ $('#settings_onehand').change(function() {
 });
 
 $('#settings_cleardata').click(function() {
-  if (confirm('游戏进度将被删除，确定吗？')) {
+  if (confirm('Tiến trình sẽ bị xóa, bạn chắc chứ？')) {
     Module['_dlm_reset']();
   }
 });
@@ -140,7 +140,7 @@ $('#error_close').click(function() {
     location.reload();
 });
 
-// 不允许屏幕移动
+
 $(function() {
     var supportsPassiveOption = false;
     try {
